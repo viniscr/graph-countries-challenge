@@ -1,5 +1,5 @@
 import React, { FormEvent, useState } from 'react';
-import { FaSearch, FaArrowLeft } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 
 interface HeaderProps {
   handleSearch?: Function;

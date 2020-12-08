@@ -16,7 +16,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
 
   useEffect(() => {
     getCountry();
-  }, []);
+  });
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
@@ -31,7 +31,6 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
   }
 
   const {
-    _id,
     name,
     flag,
     capital,

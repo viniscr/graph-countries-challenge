@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import { LIST } from '../../graphql/queries';
 import { Country } from '../../models/country';

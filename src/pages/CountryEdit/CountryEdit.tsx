@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import { DETAILS } from '../../graphql/queries';
 import { countriesVar } from '../../graphql/reactivities/countriesVariable';
-import { Link } from 'react-router-dom';
 import { Country } from '../../models/country';
 import Form from '../../components/Form/Form';
 import Header from '../../components/Header/Header';
@@ -19,7 +18,7 @@ const CountryEdit: React.FC<CountryEditProps> = ({ match, history }) => {
 
   useEffect(() => {
     getCountry();
-  }, []);
+  });
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
