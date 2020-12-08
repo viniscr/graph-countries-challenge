@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+
+  @media screen and (min-width: $tablet) {
+    font-size: 68.75%; //1rem = 11px, 11/16 = 68.75%
+  }
+
+  @media screen and (min-width: $desktop-large) {
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

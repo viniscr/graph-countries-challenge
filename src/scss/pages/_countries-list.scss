@@ -1,0 +1,22 @@
+.countries-list-container {
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-gap: 1.4em;
+  max-width: 1024px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
