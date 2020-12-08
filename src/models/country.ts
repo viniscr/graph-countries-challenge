@@ -1,12 +1,12 @@
 export interface Country {
-  _id: number;
+  _id: string;
   name: string;
   area: number;
   population: number;
   capital: string;
   location: {
     latitude: number;
-    longitue: number;
+    longitude: number;
   };
   topLevelDomains: [
     {

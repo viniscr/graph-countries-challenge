@@ -10,8 +10,8 @@ const Card: React.FC<CardProps> = ({ country }) => {
   const { name, capital, flag, _id } = country;
 
   return (
-    <article className="card">
-      <Link to={`countries/${_id}`}>
+    <article className="card" data-testid="card">
+      <Link to={`countries/${_id}`} data-testid="country-details">
         <div className="card__media">
           <img className="card__flag" src={flag.svgFile} alt="Country Flag" />
         </div>
