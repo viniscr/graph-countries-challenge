@@ -21,6 +21,8 @@ deploy_app:
   stage: deploy
   before_script:
     - yarn install
+    - git config user.email "alencarvi@gmail.com"
+    - git config user.name "viniscr"
   script:
     - yarn deploy
 
