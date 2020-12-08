@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css",
+    "main.js": "/graph-countries-challenge/static/js/main.64c8b82c.chunk.js",
+    "main.js.map": "/graph-countries-challenge/static/js/main.64c8b82c.chunk.js.map",
+    "runtime-main.js": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js",
+    "runtime-main.js.map": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js.map",
+    "static/js/2.5ad0a60d.chunk.js": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js",
+    "static/js/2.5ad0a60d.chunk.js.map": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js.map",
+    "index.html": "/graph-countries-challenge/index.html",
+    "static/css/main.73b9508f.chunk.css.map": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css.map",
+    "static/js/2.5ad0a60d.chunk.js.LICENSE.txt": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7954ba02.js",
+    "static/js/2.5ad0a60d.chunk.js",
+    "static/css/main.73b9508f.chunk.css",
+    "static/js/main.64c8b82c.chunk.js"
+  ]
+}
