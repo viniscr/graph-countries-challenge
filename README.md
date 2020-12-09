@@ -26,8 +26,6 @@ http://localhost:3000
 ```
 # run all the tests
 $ yarn test
-
-
 ```
 
 ## Available Functions
