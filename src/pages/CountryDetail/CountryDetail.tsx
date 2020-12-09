@@ -16,7 +16,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
 
   useEffect(() => {
     getCountry();
-  });
+  },[getCountry]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
@@ -42,7 +42,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
   return (
     <div>
       <Header hasSearch={false} />
-      <div className="country-detail-container">
+      <div className="country-detail-container" data-testid="country-detail">
         <Link className="country-detail-back-button" to="/countries">
           <FaArrowLeft className="country-detail-back-button__icon" />
           Go back
@@ -52,7 +52,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
             <img
               className="country-detail-content-media-img"
               src={flag.svgFile}
-              alt={` Flag of ${name} `}
+              alt={`Flag of ${name}`}
             />
           </div>
           <div className="country-detail-content-info">
@@ -61,9 +61,9 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
               <h3 className="country-detail-content-info__title">Capital</h3>
               <p className="country-detail-content-info__value">{capital}</p>
               <h3 className="country-detail-content-info__title">Area</h3>
-              <p className="country-detail-content-info__value">{area}</p>
+              <p className="country-detail-content-info__value">{area} km²</p>
               <h3 className="country-detail-content-info__title">Population</h3>
-              <p className="country-detail-content-info__value">{population}</p>
+              <p className="country-detail-content-info__value">{population} hab</p>
               <h3 className="country-detail-content-info__title">
                 Top level domain
               </h3>

@@ -4,7 +4,7 @@ import Input from '../Input/Input';
 
 interface FormProps {
   country: Country;
-  handleEdit: any;
+  handleEdit?: any;
 }
 
 const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
@@ -35,7 +35,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
     handleEdit(editedCountry);
   }
   return (
-    <div className="country-edit-container">
+    <div className="country-edit-container" data-testid="edit-container">
       <main>
         <form className="country-edit-form" onSubmit={handleSubmit}>
           <fieldset>
@@ -47,6 +47,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setFlag(e.target.value);
               }}
+              data-testid="edit-input-flag"
             />
             <Input
               name="name"
@@ -55,6 +56,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setName(e.target.value);
               }}
+              data-testid="edit-input-name"
             />
 
             <Input
@@ -65,6 +67,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setCapital(e.target.value);
               }}
+              data-testid="edit-input-capital"
             />
             <Input
               name="area"
@@ -74,6 +77,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setArea(e.target.value as any);
               }}
+              data-testid="edit-input-area"
             />
 
             <Input
@@ -84,6 +88,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setPopulation(e.target.value as any);
               }}
+              data-testid="edit-input-population"
             />
             <Input
               name="topleveldomain"
@@ -93,6 +98,7 @@ const Form: React.FC<FormProps> = ({ country, handleEdit }) => {
               onChange={(e) => {
                 setTopLevelDomains(e.target.value);
               }}
+              data-testid="edit-input-topleveldomain"
             />
             <button type="submit">Save</button>
           </fieldset>

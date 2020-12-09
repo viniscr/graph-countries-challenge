@@ -5,6 +5,7 @@ import { countriesVar } from '../../graphql/reactivities/countriesVariable';
 import { Country } from '../../models/country';
 import Form from '../../components/Form/Form';
 import Header from '../../components/Header/Header';
+import { Link } from 'react-router-dom';
 
 interface CountryEditProps {
   match: any;
@@ -18,11 +19,19 @@ const CountryEdit: React.FC<CountryEditProps> = ({ match, history }) => {
 
   useEffect(() => {
     getCountry();
-  });
+  },[getCountry]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
   if (data === undefined) return <p>Loading...</p>;
+  if (data.details.length === 0) {
+    return (
+      <p>
+        Country not found. Please try again. <br />
+        <Link to="/countries">Voltar</Link>
+      </p>
+    );
+  }
 
   function handleEdit(editedCountry: Country) {
     const newLocalData = countriesVar().map((item) => {
@@ -36,7 +45,7 @@ const CountryEdit: React.FC<CountryEditProps> = ({ match, history }) => {
   }
 
   return (
-    <div>
+    <div data-testid="country-edit">
       <Header hasSearch={false} />
       <Form country={data.details} handleEdit={handleEdit} />
     </div>

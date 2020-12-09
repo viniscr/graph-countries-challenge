@@ -13,15 +13,15 @@ function CountriesList() {
 
   useEffect(() => {
     getCountryList();
-  }, [getCountryList]);
+  });
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
   if (data === undefined) return <p>Loading...</p>;
-  if (data.list.length === 0) {
+  if (data.list!.length === 0) {
     return (
       <p>
-        País não encontrado. Tente novamente. <br />
+        Country not found. Please try again. <br />
         <Link to="/countries">Voltar</Link>
       </p>
     );
@@ -34,7 +34,7 @@ function CountriesList() {
   return (
     <div>
       <Header hasSearch={true} handleSearch={handleSearch} />
-      <div className="countries-list-container">
+      <div className="countries-list-container" data-testid="countries-list">
         {data.list.map(
           (country: Country, i: string | number | null | undefined) => (
             <Card country={country} key={i} />

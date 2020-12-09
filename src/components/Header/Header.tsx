@@ -17,10 +17,10 @@ const Header: React.FC<HeaderProps> = ({ handleSearch, hasSearch }) => {
   }
 
   return (
-    <header className="header">
-      <h1 className="header__title">Country Finder</h1>
+    <header className="header" data-testid="header">
+      <h1 className="header__title" data-testid="header-title">Country Finder</h1>
       {hasSearch && (
-        <form action="#" className="search" onSubmit={handleSubmit}>
+        <form action="#" className="search" onSubmit={handleSubmit} data-testid="header-search">
           <input
             type="text"
             className="search__input"
