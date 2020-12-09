@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/viniscr.github.io/graph-countries-challenge/static/css/main.73b9508f.chunk.css",
-    "main.js": "/viniscr.github.io/graph-countries-challenge/static/js/main.321e035d.chunk.js",
-    "main.js.map": "/viniscr.github.io/graph-countries-challenge/static/js/main.321e035d.chunk.js.map",
-    "runtime-main.js": "/viniscr.github.io/graph-countries-challenge/static/js/runtime-main.8bfdb542.js",
-    "runtime-main.js.map": "/viniscr.github.io/graph-countries-challenge/static/js/runtime-main.8bfdb542.js.map",
-    "static/js/2.1d16f03a.chunk.js": "/viniscr.github.io/graph-countries-challenge/static/js/2.1d16f03a.chunk.js",
-    "static/js/2.1d16f03a.chunk.js.map": "/viniscr.github.io/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.map",
-    "index.html": "/viniscr.github.io/graph-countries-challenge/index.html",
-    "static/css/main.73b9508f.chunk.css.map": "/viniscr.github.io/graph-countries-challenge/static/css/main.73b9508f.chunk.css.map",
-    "static/js/2.1d16f03a.chunk.js.LICENSE.txt": "/viniscr.github.io/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.LICENSE.txt"
+    "main.css": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css",
+    "main.js": "/graph-countries-challenge/static/js/main.321e035d.chunk.js",
+    "main.js.map": "/graph-countries-challenge/static/js/main.321e035d.chunk.js.map",
+    "runtime-main.js": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js",
+    "runtime-main.js.map": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js.map",
+    "static/js/2.1d16f03a.chunk.js": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js",
+    "static/js/2.1d16f03a.chunk.js.map": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.map",
+    "index.html": "/graph-countries-challenge/index.html",
+    "static/css/main.73b9508f.chunk.css.map": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css.map",
+    "static/js/2.1d16f03a.chunk.js.LICENSE.txt": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8bfdb542.js",
+    "static/js/runtime-main.7954ba02.js",
     "static/js/2.1d16f03a.chunk.js",
     "static/css/main.73b9508f.chunk.css",
     "static/js/main.321e035d.chunk.js"
