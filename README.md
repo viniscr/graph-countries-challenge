@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Contry Finder
+Wep App built in ReactJS to see a list of countries, search for a country, see their details and edit an specific country. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The wep app is available for use in this link 
 
-## Available Scripts
+[https://viniscr.github.io/graph-countries-challenge/](https://viniscr.github.io/graph-countries-challenge) 
 
-In the project directory, you can run:
+## Running Project
+```
+# clone repository
+$ git clone https://github.com/viniscr/graph-countries-challenge.git
+$ cd graph-countries-challenge
 
-### `yarn start`
+# install dependencies
+$ yarn install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# build the project 
+$ yarn start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# acess the application on brownser
+http://localhost:3000
 
-### `yarn test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running Tests
+```
+# run all the tests
+$ yarn test
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Available Functions
+- List of Countries
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The list of countries is loaded by default in the initial page
 
-### `yarn eject`
+- Country Details
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To see details about an specific movie, click on the country card
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Searching countries
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To search for an specific country, type his full or partial title and hit enter
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Edit a contry
+To edit an specific country, click on the country card and on country detail page click on "Edit"
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tools and Frameworks
+- [Create-react-app](https://github.com/facebook/create-react-app) - An officially supported way developed by Facebook to create single-page React applications. It offers a modern build setup with no configuration.
+- [React-router-dom](https://reactrouter.com/web/guides/quick-start) - Declarative routing for react apps
+- [Apollo GraphQL](https://www.apollographql.com/) - An implementation of GraphQL used to retrieve data in the application
