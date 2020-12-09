@@ -1,4 +1,6 @@
 image: node:12.16.0
+variables:
+  PUBLIC_URL: /graph-countries-challenge
 cache:
   paths:
     - node_modules/
@@ -28,6 +30,7 @@ deploy_app:
   script:
     - CI=true yarn build
     - rm -rf public
+    - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
     - mv build public
   artifacts:
     paths:
