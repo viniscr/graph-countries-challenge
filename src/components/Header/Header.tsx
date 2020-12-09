@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   handleSearch?: Function;
