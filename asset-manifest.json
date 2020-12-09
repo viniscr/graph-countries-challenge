@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css",
-    "main.js": "/graph-countries-challenge/static/js/main.321e035d.chunk.js",
-    "main.js.map": "/graph-countries-challenge/static/js/main.321e035d.chunk.js.map",
+    "main.css": "/graph-countries-challenge/static/css/main.9f96fce8.chunk.css",
+    "main.js": "/graph-countries-challenge/static/js/main.49bad0fb.chunk.js",
+    "main.js.map": "/graph-countries-challenge/static/js/main.49bad0fb.chunk.js.map",
     "runtime-main.js": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js",
     "runtime-main.js.map": "/graph-countries-challenge/static/js/runtime-main.7954ba02.js.map",
-    "static/js/2.1d16f03a.chunk.js": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js",
-    "static/js/2.1d16f03a.chunk.js.map": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.map",
+    "static/js/2.5ad0a60d.chunk.js": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js",
+    "static/js/2.5ad0a60d.chunk.js.map": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js.map",
     "index.html": "/graph-countries-challenge/index.html",
-    "static/css/main.73b9508f.chunk.css.map": "/graph-countries-challenge/static/css/main.73b9508f.chunk.css.map",
-    "static/js/2.1d16f03a.chunk.js.LICENSE.txt": "/graph-countries-challenge/static/js/2.1d16f03a.chunk.js.LICENSE.txt"
+    "static/css/main.9f96fce8.chunk.css.map": "/graph-countries-challenge/static/css/main.9f96fce8.chunk.css.map",
+    "static/js/2.5ad0a60d.chunk.js.LICENSE.txt": "/graph-countries-challenge/static/js/2.5ad0a60d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7954ba02.js",
-    "static/js/2.1d16f03a.chunk.js",
-    "static/css/main.73b9508f.chunk.css",
-    "static/js/main.321e035d.chunk.js"
+    "static/js/2.5ad0a60d.chunk.js",
+    "static/css/main.9f96fce8.chunk.css",
+    "static/js/main.49bad0fb.chunk.js"
   ]
 }
