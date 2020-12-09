@@ -1,4 +1,4 @@
-# Contry Finder
+# Country Finder
 Wep App built in ReactJS to see a list of countries, search for a country, see their details and edit an specific country. 
 
 The wep app is available for use in this link 
@@ -26,8 +26,6 @@ http://localhost:3000
 ```
 # run all the tests
 $ yarn test
-
-
 ```
 
 ## Available Functions
@@ -37,13 +35,14 @@ The list of countries is loaded by default in the initial page
 
 - Country Details
 
-To see details about an specific movie, click on the country card
+To see details about an specific country, click on the country card
 
 - Searching countries
 
-To search for an specific country, type his full or partial title and hit enter
+To search for an specific country, type his full or partial name and hit enter
 
 - Edit a contry
+
 To edit an specific country, click on the country card and on country detail page click on "Edit"
 
 ## Tools and Frameworks
