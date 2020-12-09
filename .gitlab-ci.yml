@@ -1,14 +1,20 @@
+image: node:12.16.0
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - yarn install
+
 stages:
   - build
   - test
   - deploy
 react_build:
-  image: node:12.16.0
   stage: build
-  before_script:
-    - yarn install
   script:
     - yarn build
+
 unit_tests:
   image: node:12.16.0
   stage: test
@@ -16,13 +22,16 @@ unit_tests:
     - yarn install
   script:
     - yarn test
+
 deploy_app:
-  image: node:12.16.0
   stage: deploy
-  before_script:
-    - yarn install
-    - git config --global user.email "alencarvi@gmail.com"
-    - git config --global user.name "viniscr"
   script:
-    - yarn deploy
+    - CI=true yarn build
+    - rm -rf public
+    - mv build public
+  artifacts:
+    paths:
+      - public # GitLab pages serve from a 'public' directory
+  only:
+    - master # run on master branch
 

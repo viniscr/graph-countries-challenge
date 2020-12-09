@@ -2,7 +2,7 @@
   "name": "graph-countries-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://viniscr.github.io/graph-countries-challenge",
+  "homepage": "https://viniscr.gitlab.io/graph-countries-challenge",
   "dependencies": {
     "@apollo/client": "^3.3.3",
     "@testing-library/jest-dom": "^5.11.4",
