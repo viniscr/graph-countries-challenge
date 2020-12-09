@@ -42,6 +42,7 @@ To see details about an specific country, click on the country card
 To search for an specific country, type his full or partial name and hit enter
 
 - Edit a contry
+
 To edit an specific country, click on the country card and on country detail page click on "Edit"
 
 ## Tools and Frameworks
