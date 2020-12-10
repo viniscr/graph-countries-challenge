@@ -18,9 +18,11 @@ const Header: React.FC<HeaderProps> = ({ handleSearch, hasSearch }) => {
 
   return (
     <header className="header" data-testid="header">
-      <h1 className="header__title" data-testid="header-title">
-        Country Finder
-      </h1>
+      <a href="/countries">
+        <h1 className="header__title" data-testid="header-title">
+          Country Finder
+        </h1>
+      </a>
       {hasSearch && (
         <form
           action="#"
