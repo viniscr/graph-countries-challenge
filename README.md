@@ -3,7 +3,7 @@ Wep App built in ReactJS to see a list of countries, search for a country, see t
 
 The wep app is available for use in this link 
 
-[https://viniscr.github.io/graph-countries-challenge/](https://viniscr.github.io/graph-countries-challenge) 
+[https://viniscr.gitlab.io/graph-countries-challenge/](https://viniscr.gitlab.io/graph-countries-challenge) 
 
 ## Running Project
 ```
