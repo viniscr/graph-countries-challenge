@@ -13,7 +13,7 @@ function CountriesList() {
 
   useEffect(() => {
     getCountryList();
-  },[getCountryList]);
+  }, [getCountryList]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;

@@ -16,7 +16,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
 
   useEffect(() => {
     getCountry();
-  },[getCountry]);
+  }, [getCountry]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
@@ -63,7 +63,9 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ match }) => {
               <h3 className="country-detail-content-info__title">Area</h3>
               <p className="country-detail-content-info__value">{area} km²</p>
               <h3 className="country-detail-content-info__title">Population</h3>
-              <p className="country-detail-content-info__value">{population} hab</p>
+              <p className="country-detail-content-info__value">
+                {population} hab
+              </p>
               <h3 className="country-detail-content-info__title">
                 Top level domain
               </h3>

@@ -1,6 +1,5 @@
 import React, { FormEvent, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   handleSearch?: Function;
@@ -19,9 +18,16 @@ const Header: React.FC<HeaderProps> = ({ handleSearch, hasSearch }) => {
 
   return (
     <header className="header" data-testid="header">
-      <h1 className="header__title" data-testid="header-title">Country Finder</h1>
+      <h1 className="header__title" data-testid="header-title">
+        Country Finder
+      </h1>
       {hasSearch && (
-        <form action="#" className="search" onSubmit={handleSubmit} data-testid="header-search">
+        <form
+          action="#"
+          className="search"
+          onSubmit={handleSubmit}
+          data-testid="header-search"
+        >
           <input
             type="text"
             className="search__input"

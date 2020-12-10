@@ -50,11 +50,12 @@ describe('Country List page component', () => {
       },
       error: new Error('fail'),
     };
-    render (<MockedProvider mocks={[errorMock]} addTypename={false}>
+    render(
+      <MockedProvider mocks={[errorMock]} addTypename={false}>
         <CountriesList />
       </MockedProvider>
-      )
-    
+    );
+
     waitFor(() => expect(screen.getByText('Failed :(')).not.toBeNull());
   });
   it('should render loading state initially', async () => {

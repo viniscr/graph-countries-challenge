@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  render,
-  screen,
-  cleanup,
-  waitFor,
-} from '@testing-library/react';
+import { render, screen, cleanup, waitFor } from '@testing-library/react';
 import CountryDetail from '../../pages/CountryDetail/CountryDetail';
 
 import { MockedProvider } from '@apollo/client/testing';

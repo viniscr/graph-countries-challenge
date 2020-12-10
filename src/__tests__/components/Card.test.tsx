@@ -73,7 +73,9 @@ describe('Card component', () => {
 
     it('check if it is the correct name', () => {
       renderWithRouter(<Card country={countryData} />);
-      expect(screen.getByText(/Afghanistan/i).textContent).toBe(countryData.name);
+      expect(screen.getByText(/Afghanistan/i).textContent).toBe(
+        countryData.name
+      );
     });
   });
 

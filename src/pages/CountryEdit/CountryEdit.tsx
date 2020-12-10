@@ -19,7 +19,7 @@ const CountryEdit: React.FC<CountryEditProps> = ({ match, history }) => {
 
   useEffect(() => {
     getCountry();
-  },[getCountry]);
+  }, [getCountry]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Failed :(</p>;
